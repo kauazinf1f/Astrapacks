@@ -1,0 +1,75 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ASTRA DESIGNER — Packs de Design</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header container">
+    <div class="logo">ASTRA <span>DESIGNER</span></div>
+    <nav class="nav">
+      <a href="#produtos">Produtos</a>
+      <a href="https://discord.gg/BExBHtHTY4" target="_blank" rel="noopener">Suporte (Discord)</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero container">
+    <div class="hero__copy">
+      <h1>Packs profissionais de design</h1>
+      <p>Arquivos prontos para acelerar seu trabalho criativo.</p>
+      <a href="#produtos" class="btn btn--primary">Ver Packs</a>
+    </div>
+  </section>
+
+  <section id="produtos" class="products container">
+    <h2>Produtos em destaque</h2>
+    <div class="grid" id="product-grid">
+      <!-- Cards gerados por JS -->
+    </div>
+  </section>
+
+  <section class="trust container">
+    <div class="trust__item">💬 Suporte via <strong>Discord</strong></div>
+    <div class="trust__item">⚡ Pagamento <strong>Pix</strong></div>
+    <div class="trust__item">🔑 Entrega por <strong>Key única</strong>
+    <div class="trust__item">📦 Entrega por <strong>Discord</strong></div>
+  </section>
+
+  <footer id="contato" class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="logo">ASTRA <span>DESIGNER</span></div>
+        <p>Designs digitais de alta qualidade.</p>
+      </div>
+      <div>
+        <h4>Atendimento</h4>
+        <ul>
+          <li><a href="https://discord.gg/BExBHtHTY4" target="_blank" rel="noopener">Discord</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/termos.html">Termos de Uso</a></li>
+          <li><a href="/privacidade.html">Privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__copy">© 2025 ASTRA DESIGNER. Todos os direitos reservados.</div>
+  </footer>
+
+  <!-- Modal PIX (injetado por JS) -->
+  <div id="pix-modal" class="modal hidden" aria-hidden="true">
+    <div class="modal__dialog">
+      <button class="modal__close" id="pix-close" aria-label="Fechar">×</button>
+      <div id="pix-content"><!-- conteúdo dinâmico --></div>
+    </div>
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
