@@ -23,7 +23,7 @@ const PRODUCTS = [
     img: "https://cdn.discordapp.com/attachments/1387260913551151264/1408484292698308711/1755699104634.png?ex=68a9e8b7&is=68a89737&hm=502feab8a006a7feac55270cea7af4af8c26ab1c4605f29ec80fce6b8c5b2d5c&",
     pixId: "0aae73b2-fe81-4b54-813b-3834834c725e",
     qrcodeUrl: "https://public-blob.squarecloud.dev/852603072026247220/29834512706_men5nk0j-ecc5.png",
-    price: "R$ 7,00"
+    price: "R$ 4,00"
   },
   {
     id: "pack-02",
@@ -84,7 +84,7 @@ Uso exclusivo do comprador (proibido repasse ou revenda).`,
     img: "https://cdn.discordapp.com/attachments/1387260913551151264/1408486232836669561/1755743072257.png?ex=68a9ea86&is=68a89906&hm=b0961bc8444acd68c281618ab08125233856f8d344c3ad35285641254fd83611&",
     pixId: "0aae73b2-fe81-4b54-813b-3834834c725e",
     qrcodeUrl: "https://public-blob.squarecloud.dev/852603072026247220/29834512706_men5nk0j-ecc5.png",
-    price: "R$ 10,00"
+    price: "R$ 7,50"
   }
 ];
 
@@ -143,7 +143,13 @@ function openPixModal(product) {
     // Envia os dados para o webhook do Discord
     const webhookUrl = "https://discord.com/api/webhooks/1408521414067228742/fJyuBtT0k7Kha87K24H4pv3wny7w_Xu-zFgclbl6lpb6csh6jw7rknFh9HzLCNoaFKfS"; // Substitua pelo seu webhook
     const data = {
-      content: `📦 Nova compra confirmada!\nProduto: **${product.title}**\nPreço: **${product.price}**\nKey do usuário: \`${generatedKey}\`\nTimestamp: ${new Date().toISOString()}`
+      content: `📦 Nova compra confirmada!\nProduto: 
+      **${product.title}**\nPreço: **${product.price}**
+      \nKey do usuário:\`${generatedKey}\`\nTimestamp: ${new Date().toISOString()}
+      
+        https://cdn.discordapp.com/attachments/1386742934325428376/1409193148806070365/1756048209283.jpg?ex=68ac7ce4&is=68ab2b64&hm=2a14b3031d804648291c0fe11a9f4dfe84d0e95eca983afde5d0d700935a1cd4&
+      
+      `
     };
 
     try {
